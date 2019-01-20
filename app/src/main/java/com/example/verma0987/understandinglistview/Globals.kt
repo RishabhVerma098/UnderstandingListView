@@ -6,9 +6,14 @@ class Globals {
 
     companion object Chosen{
         var chosenImage:Bitmap? = null
+        var chosenText : String? = null
         fun returnImage() : Bitmap{
 
             return chosenImage!!
+
+        }
+        fun returnText():String{
+            return chosenText!!
 
         }
     }

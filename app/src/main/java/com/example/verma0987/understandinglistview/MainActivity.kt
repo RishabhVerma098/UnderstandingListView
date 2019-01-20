@@ -38,12 +38,12 @@ class MainActivity : AppCompatActivity() {
 
             val intent = Intent(applicationContext,DetailActivity::class.java)
 
-            intent.putExtra("n",name[i])
+            //intent.putExtra("n",name[i])
 
-
-
+            var bitText = name[i]
             var bit = listnames[i]
             var chosen = Globals.Chosen
+            chosen.chosenText = bitText
             chosen.chosenImage = bit
 
 
